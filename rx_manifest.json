@@ -1,7 +1,7 @@
 {
     "title": "FX TextFrame",
     "description": "Quickly and easily create, customize and animate auto-resizing text \"frames\" in After Effects.",
-    "readme": "https://github.com/fremox59/FX_TextFrame/raw/refs/heads/rxlaboratorio/HOME.md",
+    "readme": "https://github.com/fremox59/FX_TextFrame/raw/refs/heads/master/HOME.md",
     "tags": ["after effects", "animation", "rigging"],
     "version": "1.2.1",
     "date": "2025-06-01",
@@ -69,6 +69,6 @@
         }
     ],
     "links":[
-        {"title": "Installation instructions", "url": "https://github.com/fremox59/FX_TextFrame/blob/rxlaboratorio/src/README.md"}
+        {"title": "Installation instructions", "url": "https://github.com/fremox59/FX_TextFrame/blob/master/src/README.md"}
     ]
 }
