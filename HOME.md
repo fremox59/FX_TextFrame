@@ -1,5 +1,15 @@
 FX TextFrame is a feature rich tool for After Effects that helps you create, customize and animate auto-resizing text "Frames" quickly and easily, with the help of a compact, well designed UI Panel, and a dedicated Pseudo-effect.
 
+<iframe
+  width="640"
+  height="480"
+  src="https://www.youtube.com/embed/UmX4kyB2wfg"
+  frameborder="0"
+  allow="autoplay; encrypted-media"
+  allowfullscreen
+>
+</iframe>
+
 # How does it work?
 
 First choose if you want to create a Single Line setup or a MultiLine setup, by clicking the corresponding tab button at the top of the UI.
