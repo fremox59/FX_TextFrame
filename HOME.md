@@ -32,4 +32,17 @@ Please note that - instead of creating a new perfectly centered editable text la
 ## Multiple Line mode
 
 The 6 buttons/dropdown lists' icons explained in the previous section remain and behave identically in this Multi Line mode.
-But with Multi Line selected, all the lines created after having set up the Multi Line FX TextFrame rig (with the corresponding button (1)), will
+But with Multi Line selected, all the lines created after having set up the Multi Line FX TextFrame rig (with the corresponding button (1)), will be parented to a new ***CTRL FX TextFrame*** Null layer, with a dedicated effect called ***FX Multiline TextFrame*** applied to it, where you can adjust various paragraph aspects : Lines Alignement, Lines Spacing... and the Lines Animation : Time Offset, Direction...
+
+![multiLineModeUI](https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_UIinfo_multiLine-cropped.jpg)
+
+1. ***Setup multiline FX TextFrame*** button, once clicked, will prompt you to type the text you want for each line, in a pop-up window that allows you to create (or remove) as much lines as needed. Once validated, you'll end up with the corresponding text layers, all parented to one CTRL Null layer, with useful options to adapt the lines alignement, spacing, sequence animation...
+2. You can add a new line...
+3. ...or remove the last line, from the selected multiline rig (by selecting its CTRL Null layer before clicking these 2 buttons)
+4. Clicking this arrow, with a FX TextFrame Multiline CTRL Null selected, will select automatically its children layers that have the FX TextFrame onto them, making the baking process faster
+5. ***Bake path on selected FX TextFrame*** any FX TextFrame layer's path expression to regular keyframes in order to optimize performances (see below). 
+
+FX TextFrame relies on path expressions, which could slow down your machine, especaially the Multi Line setups (but with big amounts of Single Lines setups too). This is why you have the ability, with the button called ***Bake path on selected FX TextFrame***, available for both Single and Multi line modes, to bake the path property's expression for any selected FX TextFrame layer (the ones that do have a "FX TextFrame" effect). Once this button has been clicked, you end up with some easy to use and fast to compute regular path keyframes.
+
+And the very nice thing with this ***Bake path on selected FX TextFrame*** feature is that it remains non-destructive ! Indeed, if you select the same FX TextFrame layer again (that has been baked) and if you re-click on the same button, the keyframes will be removed and you'll retrieve the full expression that makes the path auto-resizing itself, with all the corners options, transform properties and animations still driven by the FX TextFrame effect ! Perfect if you need to change a text that already has an FX TextFrame that had been baked with the tool :)
+This is a non-destructive process ; you can re-click on this button even if you had backed the path animation to keyframes, and retrieve the full procedural rig!this 
