@@ -2,7 +2,9 @@ FX TextFrame is a feature rich tool for After Effects that helps you create, cus
 
 ![YOUTUBE](ONgXo-8UYIA)
 
-| <img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Multi.gif"> | <img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Multi.gif"> | <img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Multi.gif"> | 
+<img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Multi.gif">
+<img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Wording.gif">
+<img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Saber.gif"> | 
 
 
 # How does it work?
