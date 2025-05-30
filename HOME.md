@@ -2,6 +2,13 @@ FX TextFrame is a feature rich tool for After Effects that helps you create, cus
 
 ![YOUTUBE](ONgXo-8UYIA)
 
+| Content | Example |
+| --- | --- |
+| List | <ul><li>aaa</li><li>bbb</li><ul> |
+| Code block | <pre><code>ccc</code></pre> |
+| Image | <img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_UIinfo_singleLine-cropped.jpg"> |
+
+
 # How does it work?
 
 First choose if you want to create a Single Line setup or a MultiLine setup, by clicking the corresponding tab button at the top of the UI.
