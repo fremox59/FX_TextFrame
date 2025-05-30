@@ -1,14 +1,6 @@
 FX TextFrame is a feature rich tool for After Effects that helps you create, customize and animate auto-resizing text "Frames" quickly and easily, with the help of a compact, well designed UI Panel, and a dedicated Pseudo-effect.
 
-<iframe
-  width="640"
-  height="480"
-  src="https://www.youtube.com/embed/UmX4kyB2wfg"
-  frameborder="0"
-  allow="autoplay; encrypted-media"
-  allowfullscreen
->
-</iframe>
+
 
 # How does it work?
 
@@ -17,10 +9,9 @@ First choose if you want to create a Single Line setup or a MultiLine setup, by 
 ## Single Line mode
 
 By selecting the Single Line tab, you'll create only one single text layer once the button ***Create single FX TextFrame line*** will be clicked.
+Depending of the first Toggle Icon Option called ***Toggle Mask/Shape mode*** (1), you'll end up with just this single text layer with a mask onto it (if the yellow ***Mask mode*** icon with a M is the one selected), or with a text layer PLUS a shape layer parented to it if the blue ***Shape mode*** icon with a star is the selected one).
 
 ![singleLineModeUI](https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_UIinfo_singleLine-cropped.jpg)
-
-Depending of the first Toggle Icon Option called ***Toggle Mask/Shape mode*** (1), you'll end up with just this single text layer with a mask onto it (if the yellow ***Mask mode*** icon with a M is the one selected), or with a text layer PLUS a shape layer parented to it if the blue ***Shape mode*** icon with a star is the selected one).
 
 Once you have chosen the mode you want for your TextFrame setup, you can either choose to customize the other options numbered 2 to 6 in the following list, right now, or you can decide to use them afterwhile once you'll have created your TextFrame setup, it's up to you!
 
