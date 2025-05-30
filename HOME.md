@@ -2,8 +2,7 @@ FX TextFrame is a feature rich tool for After Effects that helps you create, cus
 
 ![YOUTUBE](ONgXo-8UYIA)
 
-<img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Multi.gif"><img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Wording.gif"><img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Saber.gif"> 
-
+<img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Wording.gif"><img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Saber.gif"> 
 
 # How does it work?
 
@@ -33,6 +32,8 @@ Clicking the ***Create single FX TextFrame line*** will then create a new FX Tex
 Please note that - instead of creating a new perfectly centered editable text layer from scratch - you can also select an existing one in the active composition, and click on the ***Create single FX TextFrame line*** button in order to apply the FX TextFrame onto it.
 
 ## Multiple Line mode
+
+<img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Multi.gif">
 
 The 6 buttons/dropdown lists' icons explained in the previous section remain and behave identically in this Multi Line mode.
 But with Multi Line selected, all the lines created after having set up the Multi Line FX TextFrame rig (with the corresponding button (1)), will be parented to a new ***CTRL FX TextFrame*** Null layer, with a dedicated effect called ***FX Multiline TextFrame*** applied to it, where you can adjust various paragraph aspects : Lines Alignement, Lines Spacing... and the Lines Animation : Time Offset, Direction...
