@@ -42,6 +42,8 @@ But with Multi Line selected, all the lines created after having set up the Mult
 4. Clicking this arrow, with a FX TextFrame Multiline CTRL Null selected, will select automatically its children layers that have the FX TextFrame onto them, making the baking process faster
 5. ***Bake path on selected FX TextFrame*** any FX TextFrame layer's path expression to regular keyframes in order to optimize performances (see below). 
 
+## Baking and unbaking Path expressions
+
 FX TextFrame relies on path expressions, which could slow down your machine, especaially the Multi Line setups (but with big amounts of Single Lines setups too). This is why you have the ability, with the button called ***Bake path on selected FX TextFrame***, available for both Single and Multi line modes, to bake the path property's expression for any selected FX TextFrame layer (the ones that do have a "FX TextFrame" effect). Once this button has been clicked, you end up with some easy to use and fast to compute regular path keyframes.
 
 And the very nice thing with this ***Bake path on selected FX TextFrame*** feature is that it remains non-destructive ! Indeed, if you select the same FX TextFrame layer again (that has been baked) and if you re-click on the same button, the keyframes will be removed and you'll retrieve the full expression that makes the path auto-resizing itself, with all the corners options, transform properties and animations still driven by the FX TextFrame effect ! Perfect if you need to change a text that already has an FX TextFrame that had been baked with the tool :)
