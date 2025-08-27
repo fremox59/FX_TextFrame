@@ -1,4 +1,4 @@
-• [Website : (fremox.com)]
+• [Website : fremox.com (http://www.fremox.com/)]
 • [Linkedin (https://www.linkedin.com/in/fremox-matthieu-fremeaux-a71956314/)] | [Instagram (https://www.instagram.com/fremox59/)] | [Behance (https://www.behance.net/fremox)] | [Dribbble (https://dribbble.com/fremox)]
 
 I'm Matthieu Fremeaux, aka Fremox, a senior multidisciplinary Motion Designer living in northern France.
