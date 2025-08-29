@@ -141,76 +141,106 @@
                     compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
                     compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(0);
                 } else if (selectedAnim == 2) {
-                    compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(1);
-                    compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(0);
                     try {
-                        compLayers[l].parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(2);
-                    } catch (err) {
+                        compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(2);
+                        compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                    } catch (err){
                         try {
-                            compLayers[l].parent.parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(2);
+                            compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(2);
+                            compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                        } catch (err) {
+                            try {
+                                compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                                compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(1);
+                                compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                                compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(0);
                             } catch (err) {}
+                        }
                     }
                 } else if (selectedAnim == 1) {
-                    compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
-                    compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(0);
                     try {
-                        compLayers[l].parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(1);
-                    } catch (err) {
+                        compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(1);
+                        compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                    } catch (err){
                         try {
-                            compLayers[l].parent.parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(1);
+                            compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(1);
+                            compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                        } catch (err) {
+                            try {
+                                compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                                compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
+                                compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                                compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(0);
                             } catch (err) {}
+                        }
                     }
                 } else if (selectedAnim == 3){
-                    compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
-                    compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(1);
-                    compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(0);
                     try {
-                        compLayers[l].parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(3);
-                    } catch (err) {
+                        compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(3);
+                        compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                    } catch (err){
                         try {
-                            compLayers[l].parent.parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(3);
+                            compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(3);
+                            compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                        } catch (err) {
+                            try {
+                                compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                                compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
+                                compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(1);
+                                compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(0);
                             } catch (err) {}
+                        }
                     }
                 } else if (selectedAnim == 5) {
-                    compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(1);
-                    compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(1);
                     try {
-                        compLayers[l].parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(5);
-                    } catch (err) {
+                        compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(5);
+                        compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                    } catch (err){
                         try {
-                            compLayers[l].parent.parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(5);
+                            compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(5);
+                            compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                        } catch (err) {
+                            try {
+                                compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                                compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(1);
+                                compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                                compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(1);;
                             } catch (err) {}
+                        }
                     }
                 } else if (selectedAnim == 4) {
-                    compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
-                    compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(1);
                     try {
-                        compLayers[l].parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(4);
-                    } catch (err) {
+                        compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(4);
+                        compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                    } catch (err){
                         try {
-                            compLayers[l].parent.parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(4);
+                            compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(4);
+                            compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                        } catch (err) {
+                            try {
+                                compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                                compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
+                                compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                                compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(1);
                             } catch (err) {}
+                        }
                     }
                 } else {
-                    compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
-                    compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(1);
-                    compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(1);
                     try {
-                        compLayers[l].parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(6);
-                    } catch (err) {
+                        compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(6);
+                        compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                    } catch (err){
                         try {
-                            compLayers[l].parent.parent.property("FX Multiline TextFrame").property("Multi Opening Direction").setValue(6);
+                            compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(6);
+                            compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                        } catch (err) {
+                            try {
+                                compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                                compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
+                                compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(1);
+                                compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(1);
                             } catch (err) {}
+                        }
                     }
                 }
             } catch (err) {}
@@ -1206,7 +1236,7 @@
         }
     }
 
-    function magicSelect(){
+    function magicSelect(shiftIsPressed,AltIsPressed){
         var myComp = app.project.activeItem;
         var compLayers = myComp.selectedLayers;
         var myLayer = compLayers[0];
@@ -1214,7 +1244,19 @@
             var iD = myLayer.effect("FX Multiline TextFrame").propertyIndex;
             for(var m = iD-1 ; m >=1 ; m--){
                 var childId = myLayer.effect(m)("ADBE Layer Control-0001").value ;
-                myComp.layer(childId).selected = true ;
+                if(shiftIsPressed == false && AltIsPressed ==true){
+                    if(m % 2 == 0){
+                    myComp.layer(childId).selected = true ;
+                    }else{
+                    }
+                }else if(shiftIsPressed == true && AltIsPressed ==true){
+                    if((m + 1) % 2 == 0){
+                    myComp.layer(childId).selected = true ;
+                    }else{
+                    }
+                }else{
+                    myComp.layer(childId).selected = true ;
+                }                
             }
                 compLayers[0].selected = false ;
                 myLayer.selected = false ;
@@ -1788,7 +1830,7 @@
     btnMagicSelect.helpTip = "Pick the children FX TextFrame layers\nof a selected Rig's CTRL l"
     btnMagicSelect.preferredSize = [30, 30];
     var btnBakePath2 = bakingSubGroup2.add("button", undefined, "Bake path on selected FX TextFrame");
-    btnBakePath2.helpTip = "Bake the path expression property of\nthe selected layer(s) into keyframes\n(reversible if you re-apply it after)";
+    btnBakePath2.helpTip = "Bake the path expression property of\nthe selected layer(s) into keyframes\n(reversible if you re-apply it after)\nALT > Select 1 line over 2 (odd numbers)\nALT + SHIFT > Select 1 line over 2 (even numbers)";
     btnBakePath2.preferredSize = [220, 30];
 
     var invisibleGroup = mainPalette.add('group');
@@ -2077,16 +2119,9 @@
     };
 
     btnBakePath.onClick = function () {
-        /*if(compLayers.length > 2 || myComp.duration > 5){
-            if(confirm("Due to the amount of selected layers and/or the composition duration, baking the path expressions could be pretty long to process (up to a few minutes). Do you still want to continue ? If you click YES, please be patient : let the script work while you wait (time for a break :) and don't escape or shut down AfterEffects !")){
-            app.beginUndoGroup("Bake path expression on selected FX TextFrame layer(s)");
-            bakePath();
-            app.endUndoGroup();}
-        }else{*/
             app.beginUndoGroup("Bake path expression on selected FX TextFrame layer(s)");
             bakePath();
             app.endUndoGroup();  
-        //}
     };
 
     btnBakePath2.onClick = function () {
@@ -2096,8 +2131,24 @@
     };
 
     btnMagicSelect.onClick = function(){
+        var touches = detect();
+        var isShift = false ;
+        var isAlt = false ;
+        if (touches.indexOf("shiftalt") != -1) {
+            isShift = true ;
+            isAlt = true ;
+        }else if (touches.indexOf("alt") != -1){
+            isShift = false ;
+            isAlt = true ;
+        }else if (touches.indexOf("shift") != -1){
+            isShift = true ;
+            isAlt = false ;
+        }else{	
+            isShift = false ;
+            isAlt = false ;
+        };
         app.beginUndoGroup("Pick children paths of the selected FX TextFrame's rig");
-        magicSelect();
+        magicSelect(isShift,isAlt);
         app.endUndoGroup();  
     }
 
