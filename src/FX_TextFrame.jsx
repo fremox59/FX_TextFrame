@@ -1059,6 +1059,8 @@
                     myTxtMaskLayer.selected = false ;
                 }
 
+                myRigCTRLLayer.selected = true ;
+
             } else {
 
 
@@ -1088,7 +1090,6 @@
                     } else {
                         myTxtMaskLayer.property("ADBE Effect Parade").property("ADBE Set Matte3").enabled = true;
                     }
-
 
                     myRigCTRLLayer.moveToBeginning();
                     myTxtMaskLayer.applyPreset(myPreset4);
@@ -1184,16 +1185,16 @@
             }
 
             if(selectedComposit == 0){
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = true ;
+                myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = true ;
                 myNewFXlayer.moveAfter(myNewFXlayer.parent);
             }else if(selectedComposit == 1){
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = false ;
+                myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = false ;
                 myNewFXlayer.moveAfter(myNewFXlayer.parent);
             }else if(selectedComposit == 2){
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = false ;
+                myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = false ;
                 myNewFXlayer.moveBefore(myNewFXlayer.parent);
             }else{
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = true ;
+                myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = true ;
                 myNewFXlayer.moveBefore(myNewFXlayer.parent);
             }
 
@@ -1202,7 +1203,7 @@
                     myNewFXlayer.selected = false ;
                     myRigCTRLLayer.selected = false ;
                 }
-
+                myRigCTRLLayer.selected = true ;
             }
             win.close();
         }
@@ -1213,7 +1214,7 @@
 
         function add_row(maingroup) {
             var group = maingroup.add("group");
-            group.edit = group.add("edittext", ["", "", 200, 20], "Edit this text n°" + maingroup.children.length);
+            group.edit = group.add("edittext", ["", "", 200, 20], "Edit this text " + maingroup.children.length);
             group.plus = group.add("button", undefined, "+");
             group.plus.onClick = add_btn;
             group.minus = group.add("button", undefined, "-");
@@ -1729,7 +1730,6 @@
     iconsGroup.preferredSize = [80, 34];
 
     //////////////////////////////////////////////////// 
-
     var toggleMode = iconsGroup.add("iconbutton", undefined, File(myAssetsPath + "/icons/UI_icons/toggle_Mask_mode.png"), {
         style: "toolbutton",
         toggle: false
@@ -1826,11 +1826,12 @@
     bakingSubGroup2.orientation = 'row'
     bakingSubGroup2.visible = false;
 
-    var btnMagicSelect = bakingSubGroup2.add("button", undefined, "ↆ");
-    btnMagicSelect.helpTip = "Pick the children FX TextFrame layers\nof a selected Rig's CTRL l"
+    var btnMagicSelect = bakingSubGroup2.add("iconbutton", undefined, File(myAssetsPath + "/icons/UI_icons/icon_magicSelect.png"));
+    btnMagicSelect.helpTip = "Pick the children FX TextFrame layers\nof a selected Rig's CTRL\nALT > Select only 1 line over 2 (odd numbered lines)\nALT + SHIFT > Select 1 line over 2 (even numbered lines)"
     btnMagicSelect.preferredSize = [30, 30];
+
     var btnBakePath2 = bakingSubGroup2.add("button", undefined, "Bake path on selected FX TextFrame");
-    btnBakePath2.helpTip = "Bake the path expression property of\nthe selected layer(s) into keyframes\n(reversible if you re-apply it after)\nALT > Select 1 line over 2 (odd numbers)\nALT + SHIFT > Select 1 line over 2 (even numbers)";
+    btnBakePath2.helpTip = "Bake the path expression property of\nthe selected layer(s) into keyframes\n(reversible if you re-apply it after)";
     btnBakePath2.preferredSize = [220, 30];
 
     var invisibleGroup = mainPalette.add('group');
