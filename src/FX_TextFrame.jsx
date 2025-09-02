@@ -1,5 +1,3 @@
-//@include "libs/colorPicker.js"
-
 /*
 # FX TextFrame
 # Copyright (c) 2019-2025 - Matthieu Fremeaux (aka FREMOX) and contributors
@@ -18,6 +16,8 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
+
+//@include "libs/colorPicker.js"
 
 //encapsulate the script in a function to avoid global variables
 // To avoid ANY new variable, the function is anonymous
@@ -112,7 +112,7 @@
                     compLayers[l].effect("FX TextFrame")("Frame Fill Opacity").setValue(100);
                     compLayers[l].effect("FX TextFrame")("Frame Stroke Opacity").setValue(0);
                 }
-            } catch (err) {}
+            } catch (err) { }
         }
     }
 
@@ -124,7 +124,7 @@
         for (var l = 0; l < compLayers.length; l++) {
             try {
                 compLayers[l].effect("FX TextFrame")("Frame Fill Color").setValue(fillColor);
-            } catch (err) {}
+            } catch (err) { }
         }
     }
 
@@ -144,7 +144,7 @@
                     try {
                         compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(2);
                         compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    } catch (err){
+                    } catch (err) {
                         try {
                             compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(2);
                             compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
@@ -154,14 +154,14 @@
                                 compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(1);
                                 compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
                                 compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                            } catch (err) {}
+                            } catch (err) { }
                         }
                     }
                 } else if (selectedAnim == 1) {
                     try {
                         compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(1);
                         compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    } catch (err){
+                    } catch (err) {
                         try {
                             compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(1);
                             compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
@@ -171,14 +171,14 @@
                                 compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
                                 compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
                                 compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                            } catch (err) {}
+                            } catch (err) { }
                         }
                     }
-                } else if (selectedAnim == 3){
+                } else if (selectedAnim == 3) {
                     try {
                         compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(3);
                         compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    } catch (err){
+                    } catch (err) {
                         try {
                             compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(3);
                             compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
@@ -188,14 +188,14 @@
                                 compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
                                 compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(1);
                                 compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                            } catch (err) {}
+                            } catch (err) { }
                         }
                     }
                 } else if (selectedAnim == 5) {
                     try {
                         compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(5);
                         compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    } catch (err){
+                    } catch (err) {
                         try {
                             compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(5);
                             compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
@@ -205,14 +205,14 @@
                                 compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(1);
                                 compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
                                 compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(1);;
-                            } catch (err) {}
+                            } catch (err) { }
                         }
                     }
                 } else if (selectedAnim == 4) {
                     try {
                         compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(4);
                         compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    } catch (err){
+                    } catch (err) {
                         try {
                             compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(4);
                             compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
@@ -222,14 +222,14 @@
                                 compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
                                 compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(0);
                                 compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                            } catch (err) {}
+                            } catch (err) { }
                         }
                     }
                 } else {
                     try {
                         compLayers[l].parent.parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(6);
                         compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    } catch (err){
+                    } catch (err) {
                         try {
                             compLayers[l].parent.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(6);
                             compLayers[l].effect("FX TextFrame")("Use Opening Animation").setValue(1);
@@ -239,111 +239,111 @@
                                 compLayers[l].effect("FX TextFrame")("Animation from Center").setValue(0);
                                 compLayers[l].effect("FX TextFrame")("Flip Opening Direction").setValue(1);
                                 compLayers[l].effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                            } catch (err) {}
+                            } catch (err) { }
                         }
                     }
                 }
-            } catch (err) {}
+            } catch (err) { }
         }
     }
 
-    function changeFixDim(selectedFixedDim){
+    function changeFixDim(selectedFixedDim) {
         var myComp = app.project.activeItem;
         var compLayers = myComp.selectedLayers;
         var myLayer = compLayers[0];
 
         for (var k = 0; k < compLayers.length; k++) {
-            var numLine = k+1 ;
+            var numLine = k + 1;
             try {
-            if(selectedFixedDim == 0){
-                compLayers[k].effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
-                compLayers[k].effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
-            }else if(selectedFixedDim == 1){
-                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) for the line n° " + numLine + " :","500"));
-                compLayers[k].effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
-                compLayers[k].effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
-                compLayers[k].effect("FX TextFrame")("Frame Size X").setValue(myManualX);
-                compLayers[k].effect("FX TextFrame")("Frame Margin X").setValue(0);
-            }else if(selectedFixedDim == 2){
-                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) for the line n° " + numLine + " :","250"));
-                compLayers[k].effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
-                compLayers[k].effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
-                compLayers[k].effect("FX TextFrame")("Frame Margin Y").setValue(0);
-                compLayers[k].effect("FX TextFrame")("Frame Size Y").setValue(myManualY);
-                try {
-                    compLayers[k].parent.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
-                    } catch (err) {
-                        try {
-                        compLayers[k].parent.parent.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
-                            } catch (err) {}
-                    }
-            }else{
-                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma, for the line n° " + numLine + " :","500,250"));
-                var myManualX = parseFloat(myManualDims.split(",")[0]);
-                var myManualY = parseFloat(myManualDims.split(",")[1]);
-                compLayers[k].effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
-                compLayers[k].effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
-                compLayers[k].effect("FX TextFrame")("Frame Size X").setValue(myManualX);
-                compLayers[k].effect("FX TextFrame")("Frame Size Y").setValue(myManualY);
-                compLayers[k].effect("FX TextFrame")("Frame Margin X").setValue(0);
-                compLayers[k].effect("FX TextFrame")("Frame Margin Y").setValue(0);
-                try {
-                    compLayers[k].parent.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
+                if (selectedFixedDim == 0) {
+                    compLayers[k].effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
+                    compLayers[k].effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
+                } else if (selectedFixedDim == 1) {
+                    var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) for the line n° " + numLine + " :", "500"));
+                    compLayers[k].effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
+                    compLayers[k].effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
+                    compLayers[k].effect("FX TextFrame")("Frame Size X").setValue(myManualX);
+                    compLayers[k].effect("FX TextFrame")("Frame Margin X").setValue(0);
+                } else if (selectedFixedDim == 2) {
+                    var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) for the line n° " + numLine + " :", "250"));
+                    compLayers[k].effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
+                    compLayers[k].effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
+                    compLayers[k].effect("FX TextFrame")("Frame Margin Y").setValue(0);
+                    compLayers[k].effect("FX TextFrame")("Frame Size Y").setValue(myManualY);
+                    try {
+                        compLayers[k].parent.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
                     } catch (err) {
                         try {
                             compLayers[k].parent.parent.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
-                            } catch (err) {}
+                        } catch (err) { }
+                    }
+                } else {
+                    var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma, for the line n° " + numLine + " :", "500,250"));
+                    var myManualX = parseFloat(myManualDims.split(",")[0]);
+                    var myManualY = parseFloat(myManualDims.split(",")[1]);
+                    compLayers[k].effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
+                    compLayers[k].effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
+                    compLayers[k].effect("FX TextFrame")("Frame Size X").setValue(myManualX);
+                    compLayers[k].effect("FX TextFrame")("Frame Size Y").setValue(myManualY);
+                    compLayers[k].effect("FX TextFrame")("Frame Margin X").setValue(0);
+                    compLayers[k].effect("FX TextFrame")("Frame Margin Y").setValue(0);
+                    try {
+                        compLayers[k].parent.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
+                    } catch (err) {
+                        try {
+                            compLayers[k].parent.parent.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
+                        } catch (err) { }
                     }
                 }
-            }catch (err) {}
+            } catch (err) { }
         }
     }
 
-    function changeCompositing(selectedComposit){
+    function changeCompositing(selectedComposit) {
         var myComp = app.project.activeItem;
         var compLayers = myComp.selectedLayers;
         var myLayer = compLayers[0];
 
         for (var m = 0; m < compLayers.length; m++) {
             try {
-            if(selectedComposit == 0){
-                if(compLayers[m] instanceof TextLayer){
-                    compLayers[m].transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
-                    compLayers[m].effect("FX Text Composite")("CC Composite-0003").setValue(1);
-                    compLayers[m].effect("FX Text Composite")("CC Composite-0002").setValue(3);
-                }else{
-                    compLayers[m].parent.property("Effets").property("FX setFrameAsMatte").enabled = true ;
-                    compLayers[m].moveAfter(compLayers[m].parent);
+                if (selectedComposit == 0) {
+                    if (compLayers[m] instanceof TextLayer) {
+                        compLayers[m].transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+                        compLayers[m].effect("FX Text Composite")("CC Composite-0003").setValue(1);
+                        compLayers[m].effect("FX Text Composite")("CC Composite-0002").setValue(3);
+                    } else {
+                        compLayers[m].parent.property("Effets").property("FX setFrameAsMatte").enabled = true;
+                        compLayers[m].moveAfter(compLayers[m].parent);
+                    }
+                } else if (selectedComposit == 1) {
+                    if (compLayers[m] instanceof TextLayer) {
+                        compLayers[m].transform.opacity.expression = "";
+                        compLayers[m].effect("FX Text Composite")("CC Composite-0003").setValue(0);
+                        compLayers[m].effect("FX Text Composite")("CC Composite-0002").setValue(3);
+                    } else {
+                        compLayers[m].parent.property("Effets").property("FX setFrameAsMatte").enabled = false;
+                        compLayers[m].moveAfter(compLayers[m].parent);
+                    }
+                } else if (selectedComposit == 2) {
+                    if (compLayers[m] instanceof TextLayer) {
+                        compLayers[m].transform.opacity.expression = "";
+                        compLayers[m].effect("FX Text Composite")("CC Composite-0003").setValue(0);
+                        compLayers[m].effect("FX Text Composite")("CC Composite-0002").setValue(2);
+                    } else {
+                        compLayers[m].parent.property("Effets").property("FX setFrameAsMatte").enabled = false;
+                        compLayers[m].moveBefore(compLayers[m].parent);
+                    }
+                } else {
+                    if (compLayers[m] instanceof TextLayer) {
+                        compLayers[m].transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+                        compLayers[m].effect("FX Text Composite")("CC Composite-0003").setValue(1);
+                        compLayers[m].effect("FX Text Composite")("CC Composite-0002").setValue(2);
+                    } else {
+                        compLayers[m].parent.property("Effets").property("FX setFrameAsMatte").enabled = true;
+                        compLayers[m].moveBefore(compLayers[m].parent);
+                    }
                 }
-            }else if(selectedComposit == 1){
-                if(compLayers[m] instanceof TextLayer){
-                    compLayers[m].transform.opacity.expression = "";
-                    compLayers[m].effect("FX Text Composite")("CC Composite-0003").setValue(0);
-                    compLayers[m].effect("FX Text Composite")("CC Composite-0002").setValue(3);
-                }else{
-                    compLayers[m].parent.property("Effets").property("FX setFrameAsMatte").enabled = false ;
-                    compLayers[m].moveAfter(compLayers[m].parent);
-                }
-            }else if(selectedComposit == 2){
-                if(compLayers[m] instanceof TextLayer){
-                    compLayers[m].transform.opacity.expression = "";
-                    compLayers[m].effect("FX Text Composite")("CC Composite-0003").setValue(0);
-                    compLayers[m].effect("FX Text Composite")("CC Composite-0002").setValue(2);
-                }else{
-                    compLayers[m].parent.property("Effets").property("FX setFrameAsMatte").enabled = false ;
-                    compLayers[m].moveBefore(compLayers[m].parent);
-                }
-            }else{
-                if(compLayers[m] instanceof TextLayer){
-                    compLayers[m].transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
-                    compLayers[m].effect("FX Text Composite")("CC Composite-0003").setValue(1);
-                    compLayers[m].effect("FX Text Composite")("CC Composite-0002").setValue(2);
-                }else{
-                    compLayers[m].parent.property("Effets").property("FX setFrameAsMatte").enabled = true ;
-                    compLayers[m].moveBefore(compLayers[m].parent);
-                }
-            }
-            }catch (err) {}
+            } catch (err) { }
         }
     }
 
@@ -355,7 +355,7 @@
         for (var l = 0; l < compLayers.length; l++) {
             try {
                 compLayers[l].effect("FX TextFrame")("Frame Stroke Color").setValue(strokeColor);
-            } catch (err) {}
+            } catch (err) { }
         }
 
     }
@@ -404,45 +404,45 @@
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Stroke Opacity").setValue(0);
             }
 
-                if (selectedAnim == 0) {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 2) {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 1) {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 3){
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 5) {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                } else if (selectedAnim == 4) {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                } else {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                }
+            if (selectedAnim == 0) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 2) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 1) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 3) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 5) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            } else if (selectedAnim == 4) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            } else {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            }
 
 
-            var txtProp = myTxtMaskLayer.text.sourceText ;
+            var txtProp = myTxtMaskLayer.text.sourceText;
             var txtDoc = txtProp.value;
             /*if(selectedAnim == 1){
             txtDoc.justification = ParagraphJustification.LEFT_JUSTIFY;
@@ -453,23 +453,23 @@
             //}
             myTxtMaskLayer.text.sourceText.setValue(txtDoc);
 
-            if(selectedFixedDim == 0){
+            if (selectedFixedDim == 0) {
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
-            }else if(selectedFixedDim == 1){
-                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :","500"));
+            } else if (selectedFixedDim == 1) {
+                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :", "500"));
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
-            }else if(selectedFixedDim == 2){
-                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :","250"));
+            } else if (selectedFixedDim == 2) {
+                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :", "250"));
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y").setValue(myManualY);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
-            }else{
-                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :","500,250"));
+            } else {
+                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :", "500,250"));
                 var myManualX = parseFloat(myManualDims.split(",")[0]);
                 var myManualY = parseFloat(myManualDims.split(",")[1]);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
@@ -480,26 +480,26 @@
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
             }
 
-            if(selectedComposit == 0){
-                myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+            if (selectedComposit == 0) {
+                myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(1);
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(3);
-            }else if(selectedComposit == 1){
+            } else if (selectedComposit == 1) {
                 myTxtMaskLayer.transform.opacity.expression = "";
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(0);
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(3);
-            }else if(selectedComposit == 2){
+            } else if (selectedComposit == 2) {
                 myTxtMaskLayer.transform.opacity.expression = "";
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(0);
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(2);
-            }else{
-                myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+            } else {
+                myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(1);
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(2);
             }
-            
+
             app.executeCommand(2004);
-            myTxtMaskLayer.selected = false ;
+            myTxtMaskLayer.selected = false;
             app.executeCommand(2004);
 
 
@@ -515,7 +515,7 @@
             myTxtMaskLayer.effect("FX TextFrame")("Frame Fill Color").setValue(fillColor);
             myTxtMaskLayer.effect("FX TextFrame")("Frame Stroke Color").setValue(strokeColor);
 
-                        if (myListSelection == 5 || myListSelection == 10 || myListSelection == 15) {
+            if (myListSelection == 5 || myListSelection == 10 || myListSelection == 15) {
                 myTxtMaskLayer.effect("FX TextFrame")("Corners Shape").setValue(5);
             } else {
                 myTxtMaskLayer.effect("FX TextFrame")("Corners Shape").setValue(selectedCorner);
@@ -531,63 +531,63 @@
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Stroke Opacity").setValue(0);
             }
 
-                if (selectedAnim == 0) {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 2) {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 1) {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 3){
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 5) {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                } else if (selectedAnim == 4) {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                } else {
-                    myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
-                    myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                }
+            if (selectedAnim == 0) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 2) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 1) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 3) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 5) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            } else if (selectedAnim == 4) {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            } else {
+                myTxtMaskLayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myTxtMaskLayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
+                myTxtMaskLayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            }
 
             textProp.setValue(textDocument);
-            myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+            myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
 
-            if(selectedFixedDim == 0){
+            if (selectedFixedDim == 0) {
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
-            }else if(selectedFixedDim == 1){
-                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :","500"));
+            } else if (selectedFixedDim == 1) {
+                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :", "500"));
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
-            }else if(selectedFixedDim == 2){
-                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :","250"));
+            } else if (selectedFixedDim == 2) {
+                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :", "250"));
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y").setValue(myManualY);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
-            }else{
-                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :","500,250"));
+            } else {
+                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :", "500,250"));
                 var myManualX = parseFloat(myManualDims.split(",")[0]);
                 var myManualY = parseFloat(myManualDims.split(",")[1]);
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
@@ -598,26 +598,26 @@
                 myTxtMaskLayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
             }
 
-            if(selectedComposit == 0){
-                myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+            if (selectedComposit == 0) {
+                myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(1);
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(3);
-            }else if(selectedComposit == 1){
+            } else if (selectedComposit == 1) {
                 myTxtMaskLayer.transform.opacity.expression = "";
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(0);
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(3);
-            }else if(selectedComposit == 2){
+            } else if (selectedComposit == 2) {
                 myTxtMaskLayer.transform.opacity.expression = "";
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(0);
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(2);
-            }else{
-                myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+            } else {
+                myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(1);
                 myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(2);
             }
 
             app.executeCommand(2004);
-            myTxtMaskLayer.selected = false ;
+            myTxtMaskLayer.selected = false;
             app.executeCommand(2004);
 
         } else {
@@ -665,42 +665,42 @@
                 myNewFXlayer.effect("FX TextFrame")("Frame Stroke Opacity").setValue(0);
             }
 
-                if (selectedAnim == 0) {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 2) {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 1) {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 3){
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 5) {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                } else if (selectedAnim == 4) {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                } else {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                }
+            if (selectedAnim == 0) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 2) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 1) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 3) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 5) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            } else if (selectedAnim == 4) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            } else {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            }
 
             var myTxtMaskLayer = myComp.layers.addText("FX TextFrame : Edit me !");
             myTxtMaskLayer.name = "FX TextFrame : Edit me !";
@@ -716,7 +716,7 @@
                 myTxtMaskLayer.property("ADBE Effect Parade").property("ADBE Set Matte3").enabled = true;
             }
 
-            var txtProp = myTxtMaskLayer.text.sourceText ;
+            var txtProp = myTxtMaskLayer.text.sourceText;
             var txtDoc = txtProp.value;
             /*if(selectedAnim == 1){
             txtDoc.justification = ParagraphJustification.LEFT_JUSTIFY;
@@ -727,25 +727,25 @@
             //}
             myTxtMaskLayer.text.sourceText.setValue(txtDoc);
 
-            myNewFXlayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+            myNewFXlayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
 
-            if(selectedFixedDim == 0){
+            if (selectedFixedDim == 0) {
                 myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
-            }else if(selectedFixedDim == 1){
-                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :","500"));
+            } else if (selectedFixedDim == 1) {
+                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :", "500"));
                 myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
                 myNewFXlayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
-            }else if(selectedFixedDim == 2){
-                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :","250"));
+            } else if (selectedFixedDim == 2) {
+                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :", "250"));
                 myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size Y").setValue(myManualY);
                 myNewFXlayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
-            }else{
-                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :","500,250"));
+            } else {
+                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :", "500,250"));
                 var myManualX = parseFloat(myManualDims.split(",")[0]);
                 var myManualY = parseFloat(myManualDims.split(",")[1]);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
@@ -756,23 +756,23 @@
                 myNewFXlayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
             }
 
-            if(selectedComposit == 0){
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = true ;
+            if (selectedComposit == 0) {
+                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = true;
                 myNewFXlayer.moveAfter(myNewFXlayer.parent);
-            }else if(selectedComposit == 1){
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = false ;
+            } else if (selectedComposit == 1) {
+                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = false;
                 myNewFXlayer.moveAfter(myNewFXlayer.parent);
-            }else if(selectedComposit == 2){
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = false ;
+            } else if (selectedComposit == 2) {
+                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = false;
                 myNewFXlayer.moveBefore(myNewFXlayer.parent);
-            }else{
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = true ;
+            } else {
+                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = true;
                 myNewFXlayer.moveBefore(myNewFXlayer.parent);
             }
 
             app.executeCommand(2004);
-            myTxtMaskLayer.selected = false ;
-            myNewFXlayer.selected = false ;
+            myTxtMaskLayer.selected = false;
+            myNewFXlayer.selected = false;
             app.executeCommand(2004);
 
         } else if (compLayers.length == 1 && compLayers[0] instanceof TextLayer && compLayers[0].effect.property("FX TextFrame") === null && compLayers[0].effect.property("FX setFrameAsMatte") === null) {
@@ -806,42 +806,42 @@
                 myNewFXlayer.effect("FX TextFrame")("Frame Stroke Opacity").setValue(0);
             }
 
-                if (selectedAnim == 0) {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 2) {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 1) {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 3){
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
-                } else if (selectedAnim == 5) {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                } else if (selectedAnim == 4) {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                } else {
-                    myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
-                    myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
-                    myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
-                }
+            if (selectedAnim == 0) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 2) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 1) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 3) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(0);
+            } else if (selectedAnim == 5) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            } else if (selectedAnim == 4) {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            } else {
+                myNewFXlayer.effect("FX TextFrame")("Use Opening Animation").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Animation from Center").setValue(0);
+                myNewFXlayer.effect("FX TextFrame")("Flip Opening Direction").setValue(1);
+                myNewFXlayer.effect("FX TextFrame")("Change Animation Axis").setValue(1);
+            }
 
             myNewFXlayer.parent = myTxtLayer;
 
@@ -851,25 +851,25 @@
             myNewFXlayer.property("ADBE Transform Group").property("ADBE Position").setValue([0, 0]);
 
             textProp.setValue(textDocument);
-            myNewFXlayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+            myNewFXlayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
 
-            if(selectedFixedDim == 0){
+            if (selectedFixedDim == 0) {
                 myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
-            }else if(selectedFixedDim == 1){
-                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :","500"));
+            } else if (selectedFixedDim == 1) {
+                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :", "500"));
                 myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
                 myNewFXlayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
-            }else if(selectedFixedDim == 2){
-                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :","250"));
+            } else if (selectedFixedDim == 2) {
+                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :", "250"));
                 myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size Y").setValue(myManualY);
                 myNewFXlayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
-            }else{
-                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :","500,250"));
+            } else {
+                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :", "500,250"));
                 var myManualX = parseFloat(myManualDims.split(",")[0]);
                 var myManualY = parseFloat(myManualDims.split(",")[1]);
                 myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
@@ -880,23 +880,23 @@
                 myNewFXlayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
             }
 
-            if(selectedComposit == 0){
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = true ;
+            if (selectedComposit == 0) {
+                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = true;
                 myNewFXlayer.moveAfter(myNewFXlayer.parent);
-            }else if(selectedComposit == 1){
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = false ;
+            } else if (selectedComposit == 1) {
+                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = false;
                 myNewFXlayer.moveAfter(myNewFXlayer.parent);
-            }else if(selectedComposit == 2){
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = false ;
+            } else if (selectedComposit == 2) {
+                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = false;
                 myNewFXlayer.moveBefore(myNewFXlayer.parent);
-            }else{
-                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = true ;
+            } else {
+                myNewFXlayer.parent.property("Effets").property("FX setFrameAsMatte").enabled = true;
                 myNewFXlayer.moveBefore(myNewFXlayer.parent);
             }
 
             app.executeCommand(2004);
-            myTxtMaskLayer.selected = false ;
-            myNewFXlayer.selected = false ;
+            myTxtMaskLayer.selected = false;
+            myNewFXlayer.selected = false;
             app.executeCommand(2004);
         } else {
             alert("Please select exactly 1 or 0 Text Layer that hasn't been created by FX Textframe before clicking this button !");
@@ -984,7 +984,7 @@
                     } else if (selectedAnim == 1) {
                         myRigCTRLLayer.effect("FX Multiline TextFrame")("Text Lines Alignement").setValue(1);
                         myRigCTRLLayer.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(1);
-                    } else if (selectedAnim == 3){
+                    } else if (selectedAnim == 3) {
                         myRigCTRLLayer.effect("FX Multiline TextFrame")("Text Lines Alignement").setValue(3);
                         myRigCTRLLayer.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(3);
                     } else if (selectedAnim == 5) {
@@ -1000,66 +1000,66 @@
 
                     var myTextSource = maingroup.children[n].edit.text;
                     injectInfosRig(myTxtMaskLayer, myTextSource);
-                    myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+                    myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
 
-                    var txtProp = myTxtMaskLayer.text.sourceText ;
+                    var txtProp = myTxtMaskLayer.text.sourceText;
                     var txtDoc = txtProp.value;
                     txtDoc.justification = ParagraphJustification.CENTER_JUSTIFY;
                     myTxtMaskLayer.text.sourceText.setValue(txtDoc);
 
-                    
-            if(selectedFixedDim == 0){
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
-            }else if(selectedFixedDim == 1){
-                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :","500"));
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
-            }else if(selectedFixedDim == 2){
-                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :","250"));
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
-                myRigCTRLLayer.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
 
-            }else{
-                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :","500,250"));
-                var myManualX = parseFloat(myManualDims.split(",")[0]);
-                var myManualY = parseFloat(myManualDims.split(",")[1]);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
-                myRigCTRLLayer.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
-                myTxtMaskLayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
-            }
+                    if (selectedFixedDim == 0) {
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
+                    } else if (selectedFixedDim == 1) {
+                        var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :", "500"));
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
+                    } else if (selectedFixedDim == 2) {
+                        var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :", "250"));
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
+                        myRigCTRLLayer.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
 
-            if(selectedComposit == 0){
-                myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
-                myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(1);
-                myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(3);
-            }else if(selectedComposit == 1){
-                myTxtMaskLayer.transform.opacity.expression = "";
-                myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(0);
-                myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(3);
-            }else if(selectedComposit == 2){
-                myTxtMaskLayer.transform.opacity.expression = "";
-                myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(0);
-                myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(2);
-            }else{
-                myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
-                myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(1);
-                myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(2);
-            }
+                    } else {
+                        var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :", "500,250"));
+                        var myManualX = parseFloat(myManualDims.split(",")[0]);
+                        var myManualY = parseFloat(myManualDims.split(",")[1]);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
+                        myRigCTRLLayer.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
+                        myTxtMaskLayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
+                    }
+
+                    if (selectedComposit == 0) {
+                        myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+                        myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(1);
+                        myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(3);
+                    } else if (selectedComposit == 1) {
+                        myTxtMaskLayer.transform.opacity.expression = "";
+                        myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(0);
+                        myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(3);
+                    } else if (selectedComposit == 2) {
+                        myTxtMaskLayer.transform.opacity.expression = "";
+                        myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(0);
+                        myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(2);
+                    } else {
+                        myTxtMaskLayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+                        myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0003").setValue(1);
+                        myTxtMaskLayer.effect("FX Text Composite")("CC Composite-0002").setValue(2);
+                    }
 
                     app.executeCommand(2004);
-                    myTxtMaskLayer.selected = false ;
-                    myTxtMaskLayer.selected = false ;
+                    myTxtMaskLayer.selected = false;
+                    myTxtMaskLayer.selected = false;
                 }
 
-                myRigCTRLLayer.selected = true ;
+                myRigCTRLLayer.selected = true;
 
             } else {
 
@@ -1133,7 +1133,7 @@
                     } else if (selectedAnim == 1) {
                         myRigCTRLLayer.effect("FX Multiline TextFrame")("Text Lines Alignement").setValue(1);
                         myRigCTRLLayer.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(1);
-                    } else if (selectedAnim == 3){
+                    } else if (selectedAnim == 3) {
                         myRigCTRLLayer.effect("FX Multiline TextFrame")("Text Lines Alignement").setValue(3);
                         myRigCTRLLayer.effect("FX Multiline TextFrame")("Multi Opening Direction").setValue(3);
                     } else if (selectedAnim == 5) {
@@ -1149,61 +1149,61 @@
 
                     var myTextSource = maingroup.children[n].edit.text;
                     injectInfosRig(myNewFXlayer, myTextSource);
-                    myNewFXlayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)','Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
+                    myNewFXlayer.transform.opacity.expression = ['//FX Text Frame, created by Matthieu Fremeaux (aka FREMOX)', 'Math.ceil(effect("FX TextFrame")("Animation Keyframes")/100)*value'].join('\n');
 
-                    var txtProp = myTxtMaskLayer.text.sourceText ;
+                    var txtProp = myTxtMaskLayer.text.sourceText;
                     var txtDoc = txtProp.value;
                     txtDoc.justification = ParagraphJustification.CENTER_JUSTIFY;
                     myTxtMaskLayer.text.sourceText.setValue(txtDoc);
 
-            if(selectedFixedDim == 0){
-                myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
-                myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
-            }else if(selectedFixedDim == 1){
-                var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :","500"));
-                myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
-                myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
-                myNewFXlayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
-                myNewFXlayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
-            }else if(selectedFixedDim == 2){
-                var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :","250"));
-                myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
-                myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
-                myNewFXlayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
-                myRigCTRLLayer.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
+                    if (selectedFixedDim == 0) {
+                        myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
+                    } else if (selectedFixedDim == 1) {
+                        var myManualX = parseFloat(prompt("Please enter the desired Frame Size X (in pixels) :", "500"));
+                        myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(1);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
+                    } else if (selectedFixedDim == 2) {
+                        var myManualY = parseFloat(prompt("Please enter the desired Frame Size Y (in pixels) :", "250"));
+                        myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(1);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
+                        myRigCTRLLayer.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
 
-            }else{
-                var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :","500,250"));
-                var myManualX = parseFloat(myManualDims.split(",")[0]);
-                var myManualY = parseFloat(myManualDims.split(",")[1]);
-                myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
-                myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
-                myNewFXlayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
-                myRigCTRLLayer.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
-                myNewFXlayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
-                myNewFXlayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
-            }
+                    } else {
+                        var myManualDims = (prompt("Please enter the desired Frame Size X and Size Y, separated by a comma :", "500,250"));
+                        var myManualX = parseFloat(myManualDims.split(",")[0]);
+                        var myManualY = parseFloat(myManualDims.split(",")[1]);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Size X Based On Text").setValue(0);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Size Y Based On Text").setValue(0);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Size X").setValue(myManualX);
+                        myRigCTRLLayer.effect("FX Multiline TextFrame")("Multiline Frame Size Y").setValue(myManualY);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Margin X").setValue(0);
+                        myNewFXlayer.effect("FX TextFrame")("Frame Margin Y").setValue(0);
+                    }
 
-            if(selectedComposit == 0){
-                myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = true ;
-                myNewFXlayer.moveAfter(myNewFXlayer.parent);
-            }else if(selectedComposit == 1){
-                myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = false ;
-                myNewFXlayer.moveAfter(myNewFXlayer.parent);
-            }else if(selectedComposit == 2){
-                myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = false ;
-                myNewFXlayer.moveBefore(myNewFXlayer.parent);
-            }else{
-                myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = true ;
-                myNewFXlayer.moveBefore(myNewFXlayer.parent);
-            }
+                    if (selectedComposit == 0) {
+                        myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = true;
+                        myNewFXlayer.moveAfter(myNewFXlayer.parent);
+                    } else if (selectedComposit == 1) {
+                        myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = false;
+                        myNewFXlayer.moveAfter(myNewFXlayer.parent);
+                    } else if (selectedComposit == 2) {
+                        myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = false;
+                        myNewFXlayer.moveBefore(myNewFXlayer.parent);
+                    } else {
+                        myNewFXlayer.parent.effect("FX setFrameAsMatte").enabled = true;
+                        myNewFXlayer.moveBefore(myNewFXlayer.parent);
+                    }
 
                     app.executeCommand(2004);
-                    myTxtMaskLayer.selected = false ;
-                    myNewFXlayer.selected = false ;
-                    myRigCTRLLayer.selected = false ;
+                    myTxtMaskLayer.selected = false;
+                    myNewFXlayer.selected = false;
+                    myRigCTRLLayer.selected = false;
                 }
-                myRigCTRLLayer.selected = true ;
+                myRigCTRLLayer.selected = true;
             }
             win.close();
         }
@@ -1237,33 +1237,33 @@
         }
     }
 
-    function magicSelect(shiftIsPressed,AltIsPressed){
+    function magicSelect(shiftIsPressed, AltIsPressed) {
         var myComp = app.project.activeItem;
         var compLayers = myComp.selectedLayers;
         var myLayer = compLayers[0];
-        if(compLayers.length == 1 && compLayers[0].effect.property("FX Multiline TextFrame") !== null){
+        if (compLayers.length == 1 && compLayers[0].effect.property("FX Multiline TextFrame") !== null) {
             var iD = myLayer.effect("FX Multiline TextFrame").propertyIndex;
-            for(var m = iD-1 ; m >=1 ; m--){
-                var childId = myLayer.effect(m)("ADBE Layer Control-0001").value ;
-                if(shiftIsPressed == false && AltIsPressed ==true){
-                    if(m % 2 == 0){
-                    myComp.layer(childId).selected = true ;
-                    }else{
+            for (var m = iD - 1; m >= 1; m--) {
+                var childId = myLayer.effect(m)("ADBE Layer Control-0001").value;
+                if (shiftIsPressed == false && AltIsPressed == true) {
+                    if (m % 2 == 0) {
+                        myComp.layer(childId).selected = true;
+                    } else {
                     }
-                }else if(shiftIsPressed == true && AltIsPressed ==true){
-                    if((m + 1) % 2 == 0){
-                    myComp.layer(childId).selected = true ;
-                    }else{
+                } else if (shiftIsPressed == true && AltIsPressed == true) {
+                    if ((m + 1) % 2 == 0) {
+                        myComp.layer(childId).selected = true;
+                    } else {
                     }
-                }else{
-                    myComp.layer(childId).selected = true ;
-                }                
+                } else {
+                    myComp.layer(childId).selected = true;
+                }
             }
-                compLayers[0].selected = false ;
-                myLayer.selected = false ;
-            }else{
-                alert("Please select one CTRL FX TextFrame l layer before clicking this button !")
-            }
+            compLayers[0].selected = false;
+            myLayer.selected = false;
+        } else {
+            alert("Please select one CTRL FX TextFrame l layer before clicking this button !")
+        }
     }
 
     function bakePath() {
@@ -1280,8 +1280,8 @@
             var prop1;
             var prop2;
             var prop3Val;
-            var initDur = compLayers[m].outPoint ;
-            var numK ;
+            var initDur = compLayers[m].outPoint;
+            var numK;
             var lastKtime;
 
             if (compLayers[m].effect("FX TextFrame")("Animation Keyframes").numKeys != 0) {
@@ -1307,19 +1307,19 @@
                 }
             }
             try {
-                if(compLayers[m].parent !== null && compLayers[m].parent.effect.property("FX Multiline TextFrame") !== null){
-                        compLayers[m].parent.effect("FX Multiline TextFrame")("Animation Offset (other Lines)").setValue(0);
+                if (compLayers[m].parent !== null && compLayers[m].parent.effect.property("FX Multiline TextFrame") !== null) {
+                    compLayers[m].parent.effect("FX Multiline TextFrame")("Animation Offset (other Lines)").setValue(0);
                 }
-                if(compLayers[m].parent.parent !== null && compLayers[m].parent.parent.effect.property("FX Multiline TextFrame") !== null){
+                if (compLayers[m].parent.parent !== null && compLayers[m].parent.parent.effect.property("FX Multiline TextFrame") !== null) {
 
-                        compLayers[m].parent.parent.effect("FX Multiline TextFrame")("Animation Offset (other Lines)").setValue(0);
+                    compLayers[m].parent.parent.effect("FX Multiline TextFrame")("Animation Offset (other Lines)").setValue(0);
                 }
-            }catch (e) {
+            } catch (e) {
             }
 
             try {
                 prop2 = compLayers[m].property("ADBE Mask Parade").property("FX TextFrame Mask").property("ADBE Mask Shape");
-                
+
             } catch (e) {
                 prop2 = compLayers[m].property("ADBE Root Vectors Group").property("FX TextFrame").property("ADBE Vectors Group").property("FX Frame path").property("ADBE Vector Shape");
             }
@@ -1331,7 +1331,7 @@
 
             if (prop2.numKeys == 0 && prop2.expressionEnabled) {
 
-                compLayers[m].outPoint = lastKtime+myComp.frameDuration ;
+                compLayers[m].outPoint = lastKtime + myComp.frameDuration;
 
                 prop2.selected = true;
                 app.executeCommand(2639);
@@ -1370,17 +1370,17 @@
                     }
                 }
 
-                compLayers[m].outPoint = initDur ;
+                compLayers[m].outPoint = initDur;
 
-                if(compLayers[m].parent !== null && compLayers[m].parent.effect.property("FX Multiline TextFrame") !== null){
-                        compLayers[m].parent.effect("FX Multiline TextFrame")("Animation Offset (other Lines)").setValue(prop3Val);
-                        compLayers[m].startTime += compLayers[m].startTime + prop3Val * m;
-                        compLayers[m].inPoint = compLayers[m].parent.inPoint;
+                if (compLayers[m].parent !== null && compLayers[m].parent.effect.property("FX Multiline TextFrame") !== null) {
+                    compLayers[m].parent.effect("FX Multiline TextFrame")("Animation Offset (other Lines)").setValue(prop3Val);
+                    compLayers[m].startTime += compLayers[m].startTime + prop3Val * m;
+                    compLayers[m].inPoint = compLayers[m].parent.inPoint;
                 }
-                if(compLayers[m].parent.parent !== null && compLayers[m].parent.parent.effect.property("FX Multiline TextFrame") !== null){
-                        compLayers[m].parent.parent.effect("FX Multiline TextFrame")("Animation Offset (other Lines)").setValue(prop3Val);
-                        compLayers[m].startTime += compLayers[m].startTime + prop3Val * m;
-                        compLayers[m].inPoint = compLayers[m].parent.parent.inPoint;
+                if (compLayers[m].parent.parent !== null && compLayers[m].parent.parent.effect.property("FX Multiline TextFrame") !== null) {
+                    compLayers[m].parent.parent.effect("FX Multiline TextFrame")("Animation Offset (other Lines)").setValue(prop3Val);
+                    compLayers[m].startTime += compLayers[m].startTime + prop3Val * m;
+                    compLayers[m].inPoint = compLayers[m].parent.parent.inPoint;
                 }
 
             } else {
@@ -1397,7 +1397,7 @@
                 }
                 try {
                     compLayers[m].parent.effect("FX Multiline TextFrame")("Animation Offset (other Lines)").setValue(prop3Val);
-                }catch (e){
+                } catch (e) {
                     compLayers[m].parent.parent.effect("FX Multiline TextFrame")("Animation Offset (other Lines)").setValue(prop3Val);
                 }
             }
@@ -1516,138 +1516,136 @@
 
         // FXINFOS
         // =======
-        var FXinfos = new Window("dialog"); 
-            FXinfos.text = "FX TextFrame - version " + version; 
-            FXinfos.preferredSize.width = 800; 
-            FXinfos.preferredSize.height = 600; 
-            FXinfos.orientation = "column"; 
-            FXinfos.alignChildren = ["center","top"]; 
-            FXinfos.spacing = 20; 
-            //FXinfos.margins = 24; 
+        var FXinfos = new Window("dialog");
+        FXinfos.text = "FX TextFrame - version " + version;
+        FXinfos.preferredSize.width = 800;
+        FXinfos.preferredSize.height = 600;
+        FXinfos.orientation = "column";
+        FXinfos.alignChildren = ["center", "top"];
+        FXinfos.spacing = 20;
+        //FXinfos.margins = 24; 
 
-        var statictext1 = FXinfos.add("group"); 
-            statictext1.orientation = "column"; 
-            statictext1.alignChildren = ["fill","top"]; 
-            statictext1.spacing = 0; 
+        var statictext1 = FXinfos.add("group");
+        statictext1.orientation = "column";
+        statictext1.alignChildren = ["fill", "top"];
+        statictext1.spacing = 0;
 
-            FXinfos.add("statictext", undefined,
-             "Created by Matthieu Fremeaux (aka Fremox) © 2020. For any support or feedback, please contact me at : matthieu.fremox@gmail.com",
-            {name: "statictext1", justify: "center"}); 
+        FXinfos.add("statictext", undefined,
+            "Created by Matthieu Fremeaux (aka Fremox) © 2020. For any support or feedback, please contact me at : matthieu.fremox@gmail.com",
+            { name: "statictext1", justify: "center" });
 
-        var statictext2 = FXinfos.add("group"); 
-            statictext2.orientation = "column"; 
-            statictext2.spacing = 0; 
-            statictext2.alignment = ["fill","top"]; 
+        var statictext2 = FXinfos.add("group");
+        statictext2.orientation = "column";
+        statictext2.spacing = 0;
+        statictext2.alignment = ["fill", "top"];
 
-            statictext2.add("edittext", [0, 0, 640, 100], "FX TextFrame is a feature rich tool that helps you create, customize and animate auto-resizing text blocks (called \u0022Frames\u0022) quickly and easily, with the help of a compact, well designed UI Panel, and a dedicated Pseudo-effect.\nThis is also the only tool that allows you to create such auto-resizing rectangles for Multi Line setups (paragraphs, lists...) !\nTo do so, just click on the \u0022Multi Line\u0022 tab at the top of the UI Panel (differences between both tabs are explained below).\nPlease keep in mind that, depending of your needs, choosing between Single and Multi Line should be the very first thing you consider, because you won't be able to change the Lines behavior afterwhile !", {name: "statictext2", multiline: true, scrolling: false}); 
+        statictext2.add("edittext", [0, 0, 640, 100], "FX TextFrame is a feature rich tool that helps you create, customize and animate auto-resizing text blocks (called \u0022Frames\u0022) quickly and easily, with the help of a compact, well designed UI Panel, and a dedicated Pseudo-effect.\nThis is also the only tool that allows you to create such auto-resizing rectangles for Multi Line setups (paragraphs, lists...) !\nTo do so, just click on the \u0022Multi Line\u0022 tab at the top of the UI Panel (differences between both tabs are explained below).\nPlease keep in mind that, depending of your needs, choosing between Single and Multi Line should be the very first thing you consider, because you won't be able to change the Lines behavior afterwhile !", { name: "statictext2", multiline: true, scrolling: false });
 
         // TPANEL1
         // =======
-        var tpanel1 = FXinfos.add("tabbedpanel", undefined, undefined, {name: "tpanel1"}); 
-            tpanel1.alignChildren = "fill"; 
-            tpanel1.margins = 0; 
+        var tpanel1 = FXinfos.add("tabbedpanel", undefined, undefined, { name: "tpanel1" });
+        tpanel1.alignChildren = "fill";
+        tpanel1.margins = 0;
 
         // SINGLELINEGRP
         // =============
-        var SingleLineGrp = tpanel1.add("tab", undefined, undefined, {name: "SingleLineGrp"}); 
-            SingleLineGrp.text = "Single Line"; 
-            SingleLineGrp.orientation = "column"; 
-            SingleLineGrp.alignChildren = ["fill","top"]; 
-            SingleLineGrp.spacing = 24; 
-            SingleLineGrp.margins = 16; 
+        var SingleLineGrp = tpanel1.add("tab", undefined, undefined, { name: "SingleLineGrp" });
+        SingleLineGrp.text = "Single Line";
+        SingleLineGrp.orientation = "column";
+        SingleLineGrp.alignChildren = ["fill", "top"];
+        SingleLineGrp.spacing = 24;
+        SingleLineGrp.margins = 16;
 
-        var SingleSubGrp1 = SingleLineGrp.add("group"); 
-            SingleSubGrp1.orientation = "column"; 
-            SingleSubGrp1.alignChildren = ["center","top"]; 
-            SingleSubGrp1.spacing = 0; 
+        var SingleSubGrp1 = SingleLineGrp.add("group");
+        SingleSubGrp1.orientation = "column";
+        SingleSubGrp1.alignChildren = ["center", "top"];
+        SingleSubGrp1.spacing = 0;
 
-            SingleSubGrp1.add("statictext", undefined, "By selecting the Single Line tab, you'll create only one single text layer once the button \u0022Create single FX TextFrame line\u0022 will be clicked.", {multiline: false}); 
-            SingleSubGrp1.add("statictext", undefined, "Depending of the first Toggle Icon Option called \u0022Toggle Mask/Shape mode\u0022 (1), you'll end up with just this single text layer ", {multiline: false}); 
-            SingleSubGrp1.add("statictext", undefined, "with a mask onto it (if the yellow \u0022Mask mode\u0022 icon with a M is the one selected), or with a text layer PLUS a shape layer parented to it ", {multiline: false}); 
-            SingleSubGrp1.add("statictext", undefined, "(if the blue \u0022Shape mode\u0022 icon with a star is the selected one).", {multiline: false});             
+        SingleSubGrp1.add("statictext", undefined, "By selecting the Single Line tab, you'll create only one single text layer once the button \u0022Create single FX TextFrame line\u0022 will be clicked.", { multiline: false });
+        SingleSubGrp1.add("statictext", undefined, "Depending of the first Toggle Icon Option called \u0022Toggle Mask/Shape mode\u0022 (1), you'll end up with just this single text layer ", { multiline: false });
+        SingleSubGrp1.add("statictext", undefined, "with a mask onto it (if the yellow \u0022Mask mode\u0022 icon with a M is the one selected), or with a text layer PLUS a shape layer parented to it ", { multiline: false });
+        SingleSubGrp1.add("statictext", undefined, "(if the blue \u0022Shape mode\u0022 icon with a star is the selected one).", { multiline: false });
 
 
-        var image1 = SingleLineGrp.add("image", undefined, File(myAssetsPath + "/icons/info_images/UI_info_1.png"), {name: "image1"}); 
+        var image1 = SingleLineGrp.add("image", undefined, File(myAssetsPath + "/icons/info_images/UI_info_1.png"), { name: "image1" });
 
-        var SingleSubGrp2 = SingleLineGrp.add("group"); 
-            SingleSubGrp2.orientation = "column"; 
-            SingleSubGrp2.alignChildren = ["center","top"]; 
-            SingleSubGrp2.spacing = 0; 
+        var SingleSubGrp2 = SingleLineGrp.add("group");
+        SingleSubGrp2.orientation = "column";
+        SingleSubGrp2.alignChildren = ["center", "top"];
+        SingleSubGrp2.spacing = 0;
 
-            SingleSubGrp2.add("statictext", undefined, "Clicking the \u0022Create single FX TextFrame line\u0022 will create a new FX TextFrame line, based on the options you've set up with these icons.", {multiline: false}); 
-            
-            SingleSubGrp2.add("statictext", undefined, "", {multiline: false}); 
+        SingleSubGrp2.add("statictext", undefined, "Clicking the \u0022Create single FX TextFrame line\u0022 will create a new FX TextFrame line, based on the options you've set up with these icons.", { multiline: false });
 
-            SingleSubGrp2.add("statictext", undefined, "Please note that - instead of creating a new perfectly centered editable text layer - you can also select an existing one in the active composition,", {multiline: false}); 
-            SingleSubGrp2.add("statictext", undefined, "and click on the \u0022Create single TextFrame line\u0022 button in order to apply the FX TextFrame onto it.", {multiline: false}); 
+        SingleSubGrp2.add("statictext", undefined, "", { multiline: false });
 
-            SingleSubGrp2.add("statictext", undefined, "", {multiline: false}); 
+        SingleSubGrp2.add("statictext", undefined, "Please note that - instead of creating a new perfectly centered editable text layer - you can also select an existing one in the active composition,", { multiline: false });
+        SingleSubGrp2.add("statictext", undefined, "and click on the \u0022Create single TextFrame line\u0022 button in order to apply the FX TextFrame onto it.", { multiline: false });
 
-            SingleSubGrp2.add("statictext", undefined, "Please refer to the next \u0022Multi Line\u0022 tab in order to understand the \u0022Bake path on selected FX TextFrame\u0022 last button.", {multiline: false}); 
+        SingleSubGrp2.add("statictext", undefined, "", { multiline: false });
+
+        SingleSubGrp2.add("statictext", undefined, "Please refer to the next \u0022Multi Line\u0022 tab in order to understand the \u0022Bake path on selected FX TextFrame\u0022 last button.", { multiline: false });
 
 
         // MULTILINEGRP
         // ============
-        var MultiLineGrp = tpanel1.add("tab", undefined, undefined, {name: "MultiLineGrp"}); 
-            MultiLineGrp.text = "Multi Line"; 
-            MultiLineGrp.orientation = "column"; 
-            MultiLineGrp.alignChildren = ["fill","top"]; 
-            MultiLineGrp.spacing = 24; 
-            MultiLineGrp.margins = 16; 
+        var MultiLineGrp = tpanel1.add("tab", undefined, undefined, { name: "MultiLineGrp" });
+        MultiLineGrp.text = "Multi Line";
+        MultiLineGrp.orientation = "column";
+        MultiLineGrp.alignChildren = ["fill", "top"];
+        MultiLineGrp.spacing = 24;
+        MultiLineGrp.margins = 16;
 
-        var MultiSubGrp1 = MultiLineGrp.add("group"); 
-            MultiSubGrp1.orientation = "column"; 
-            MultiSubGrp1.alignChildren = ["center","top"]; 
-            MultiSubGrp1.spacing = 0; 
+        var MultiSubGrp1 = MultiLineGrp.add("group");
+        MultiSubGrp1.orientation = "column";
+        MultiSubGrp1.alignChildren = ["center", "top"];
+        MultiSubGrp1.spacing = 0;
 
-            MultiSubGrp1.add("statictext", undefined, "The 6 buttons/dropdown lists' icons explained in the \u0022Single Line\u0022 tab, remain and behave identically in the Multi Line tab.", {multiline: false}); 
-            MultiSubGrp1.add("statictext", undefined, "But with Multi Line selected, all the lines created after having set up the Multi Line FX TextFrame rig with the corresponding button (1),", {multiline: false}); 
-            MultiSubGrp1.add("statictext", undefined, "will be parented to a new \u0022CTRL FX TextFrame\u0022 Null layer, with a dedicated effect called \u0022FX Multiline TextFrame\u0022 onto it,", {multiline: false}); 
-            MultiSubGrp1.add("statictext", undefined, "where you can adjust various paragraph aspects : Lines Alignement, Lines Spacing... and the Lines Animation : Time Offset, Direction...", {multiline: false});
+        MultiSubGrp1.add("statictext", undefined, "The 6 buttons/dropdown lists' icons explained in the \u0022Single Line\u0022 tab, remain and behave identically in the Multi Line tab.", { multiline: false });
+        MultiSubGrp1.add("statictext", undefined, "But with Multi Line selected, all the lines created after having set up the Multi Line FX TextFrame rig with the corresponding button (1),", { multiline: false });
+        MultiSubGrp1.add("statictext", undefined, "will be parented to a new \u0022CTRL FX TextFrame\u0022 Null layer, with a dedicated effect called \u0022FX Multiline TextFrame\u0022 onto it,", { multiline: false });
+        MultiSubGrp1.add("statictext", undefined, "where you can adjust various paragraph aspects : Lines Alignement, Lines Spacing... and the Lines Animation : Time Offset, Direction...", { multiline: false });
 
 
-        var image2 = MultiLineGrp.add("image", undefined, File(myAssetsPath + "/icons/info_images/UI_info_2.png"), {name: "image1"});
+        var image2 = MultiLineGrp.add("image", undefined, File(myAssetsPath + "/icons/info_images/UI_info_2.png"), { name: "image1" });
 
-        var MultiSubGrp2 = MultiLineGrp.add("group"); 
-            MultiSubGrp2.orientation = "column"; 
-            MultiSubGrp2.alignChildren = ["center","top"]; 
-            MultiSubGrp2.spacing = 0; 
+        var MultiSubGrp2 = MultiLineGrp.add("group");
+        MultiSubGrp2.orientation = "column";
+        MultiSubGrp2.alignChildren = ["center", "top"];
+        MultiSubGrp2.spacing = 0;
 
-            MultiSubGrp2.add("statictext", undefined, "FX TextFrame relies on path expressions, which could slow down your machine, especially in Multi Line setups (but with a lot of Single Lines too)", {multiline: false}); 
-            MultiSubGrp2.add("statictext", undefined, "This is why you have the ability, with the button n°5 (and the same named one in the Single Line tab as well), to bake the path property expression", {multiline: false}); 
-            MultiSubGrp2.add("statictext", undefined, "for any selected FX TextFrame layer. Once this button is clicked, you end up with some easy to use and fast to compute regular path keyframes.", {multiline: false}); 
-            MultiSubGrp2.add("statictext", undefined, "", {multiline: false}); 
-            MultiSubGrp2.add("statictext", undefined, "And the nice thing with this \u0022Bake path [...]\u0022 tool, is that it remains non-destructive ! Indeed, if you select the same FX TextFrame layer again", {multiline: false});
-            MultiSubGrp2.add("statictext", undefined, "and if you re-click on this same \u0022Bake path [...]\u0022 button, the keyframes will be removed and you'll retrieve the full expression that makes the path", {multiline: false});
-            MultiSubGrp2.add("statictext", undefined, "auto-resizing itself, with all the corners options, transform properties and animations still driven by the FX TextFrame's effect !", {multiline: false});
+        MultiSubGrp2.add("statictext", undefined, "FX TextFrame relies on path expressions, which could slow down your machine, especially in Multi Line setups (but with a lot of Single Lines too)", { multiline: false });
+        MultiSubGrp2.add("statictext", undefined, "This is why you have the ability, with the button n°5 (and the same named one in the Single Line tab as well), to bake the path property expression", { multiline: false });
+        MultiSubGrp2.add("statictext", undefined, "for any selected FX TextFrame layer. Once this button is clicked, you end up with some easy to use and fast to compute regular path keyframes.", { multiline: false });
+        MultiSubGrp2.add("statictext", undefined, "", { multiline: false });
+        MultiSubGrp2.add("statictext", undefined, "And the nice thing with this \u0022Bake path [...]\u0022 tool, is that it remains non-destructive ! Indeed, if you select the same FX TextFrame layer again", { multiline: false });
+        MultiSubGrp2.add("statictext", undefined, "and if you re-click on this same \u0022Bake path [...]\u0022 button, the keyframes will be removed and you'll retrieve the full expression that makes the path", { multiline: false });
+        MultiSubGrp2.add("statictext", undefined, "auto-resizing itself, with all the corners options, transform properties and animations still driven by the FX TextFrame's effect !", { multiline: false });
         // =======
 
-        if(singleTab) {
+        if (singleTab) {
             tpanel1.selection = SingleLineGrp;
-        }else{
+        } else {
             tpanel1.selection = MultiLineGrp;
         }
 
-        var linkButtonsGroup = FXinfos.add("group"); 
-            linkButtonsGroup.orientation = "row"; 
-            linkButtonsGroup.spacing = 12; 
-            linkButtonsGroup.alignment = ["center","top"]; 
+        var linkButtonsGroup = FXinfos.add("group");
+        linkButtonsGroup.orientation = "row";
+        linkButtonsGroup.spacing = 12;
+        linkButtonsGroup.alignment = ["center", "top"];
 
         var button1 = linkButtonsGroup.add("button", undefined, "Donate now!");
         var button2 = linkButtonsGroup.add("button", undefined, "Discover other products from RxLab.");
         var button3 = linkButtonsGroup.add("button", undefined, "Close");
 
-        var myURL1 = "http://donate.rxlab.io" ;
-        var myURL2 = "https://rxlaboratorio.org/" ;
+        var myURL1 = "http://donate.rxlab.io";
+        var myURL2 = "https://rxlaboratorio.org/";
 
-        function isMac()
-        {
-            return $.os.toLowerCase().indexOf( "mac" ) >= 0;
+        function isMac() {
+            return $.os.toLowerCase().indexOf("mac") >= 0;
         }
 
-        function openURL( url )
-        {
-            if ( isMac() ) system.callSystem('open "' + url + '"');
+        function openURL(url) {
+            if (isMac()) system.callSystem('open "' + url + '"');
             else system.callSystem('explorer "' + url + '"');
         }
 
@@ -1663,7 +1661,7 @@
             FXinfos.close();
         };
 
-    FXinfos.show();
+        FXinfos.show();
 
     }
 
@@ -1767,10 +1765,10 @@
 
         try {
             myList.items[i].image = File(myAssetsPath + "/icons/corner_styles/" + myIconsList[i]);
-        } catch (err) {}
+        } catch (err) { }
 
     }
-    
+
     myList.helpTip = "Corners style (with or without Fill & Stroke)";
 
     myList.selection = 10;
@@ -1880,7 +1878,7 @@
         app.endUndoGroup();
     }
 
-/////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////
 
     var myList3 = iconsGroup.add("dropdownlist");
     myList3.preferredSize = [34, 34];
@@ -1908,7 +1906,7 @@
         app.endUndoGroup();
     }
 
-/////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////
 
     var myList4 = iconsGroup.add("dropdownlist");
     myList4.preferredSize = [34, 34];
@@ -1936,7 +1934,7 @@
         app.endUndoGroup();
     }
 
-///////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////
 
     function colorpicker(result_color) {
         var hexToRGB = function (hex) {
@@ -1955,7 +1953,7 @@
     }
 
     function customDraw() {
-        with(this) {
+        with (this) {
             graphics.drawOSControl();
             graphics.rectPath(0, 0, size[0], size[1]);
             graphics.fillPath(fillBrush);
@@ -1963,7 +1961,7 @@
     }
 
     function customDraw2() {
-        with(this) {
+        with (this) {
             graphics.drawOSControl();
             graphics.rectPath(0, 0, size[0], size[1]);
             graphics.strokePath(strokePath);
@@ -1973,7 +1971,7 @@
     var colorsGroup = iconsGroup.add('group');
     colorsGroup.alignChildren = ['fill', 'fill'];
     colorsGroup.orientation = 'column';
-    colorsGroup.spacing = 4 ;
+    colorsGroup.spacing = 4;
     colorsGroup.preferredSize = [26, 24];
 
     var colorbutton1 = colorsGroup.add('iconbutton', undefined, undefined, {
@@ -2120,9 +2118,9 @@
     };
 
     btnBakePath.onClick = function () {
-            app.beginUndoGroup("Bake path expression on selected FX TextFrame layer(s)");
-            bakePath();
-            app.endUndoGroup();  
+        app.beginUndoGroup("Bake path expression on selected FX TextFrame layer(s)");
+        bakePath();
+        app.endUndoGroup();
     };
 
     btnBakePath2.onClick = function () {
@@ -2131,40 +2129,40 @@
         app.endUndoGroup();
     };
 
-    btnMagicSelect.onClick = function(){
+    btnMagicSelect.onClick = function () {
         var touches = detect();
-        var isShift = false ;
-        var isAlt = false ;
+        var isShift = false;
+        var isAlt = false;
         if (touches.indexOf("shiftalt") != -1) {
-            isShift = true ;
-            isAlt = true ;
-        }else if (touches.indexOf("alt") != -1){
-            isShift = false ;
-            isAlt = true ;
-        }else if (touches.indexOf("shift") != -1){
-            isShift = true ;
-            isAlt = false ;
-        }else{	
-            isShift = false ;
-            isAlt = false ;
+            isShift = true;
+            isAlt = true;
+        } else if (touches.indexOf("alt") != -1) {
+            isShift = false;
+            isAlt = true;
+        } else if (touches.indexOf("shift") != -1) {
+            isShift = true;
+            isAlt = false;
+        } else {
+            isShift = false;
+            isAlt = false;
         };
         app.beginUndoGroup("Pick children paths of the selected FX TextFrame's rig");
-        magicSelect(isShift,isAlt);
-        app.endUndoGroup();  
+        magicSelect(isShift, isAlt);
+        app.endUndoGroup();
     }
 
-    var tabTest = true ;
+    var tabTest = true;
 
     myInfobutton.onClick = function () {
         infos(tabTest);
     };
 
     mySwitchToSingle.onClick = function () {
-        tabTest = true ;
+        tabTest = true;
         singleButtonsGroup.visible = true;
         multipleButtonsGroup.visible = false;
-        bakingSubGroup1.visible = true ;
-        bakingSubGroup2.visible = false ;
+        bakingSubGroup1.visible = true;
+        bakingSubGroup2.visible = false;
         mySwitchToSingle.enabled = false;
         mySwitchToMultiple.enabled = true;
         myInfobutton.enabled = false;
@@ -2181,11 +2179,11 @@
         myList4.enabled = true;
     }
     mySwitchToMultiple.onClick = function () {
-        tabTest = false ;
+        tabTest = false;
         multipleButtonsGroup.visible = true;
         singleButtonsGroup.visible = false;
-        bakingSubGroup2.visible = true ;
-        bakingSubGroup1.visible = false ;
+        bakingSubGroup2.visible = true;
+        bakingSubGroup1.visible = false;
         mySwitchToSingle.enabled = true;
         mySwitchToMultiple.enabled = false;
         myInfobutton.enabled = false;
