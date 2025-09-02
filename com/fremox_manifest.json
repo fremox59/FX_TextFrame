@@ -1,0 +1,14 @@
+{
+    "title": "Fremox",
+    "description": "",
+    "readme": "https://github.com/fremox59/FX_TextFrame/raw/refs/heads/master/com/bio_fremox.md",
+    "picture": "https://github.com/fremox59/FX_TextFrame/raw/refs/heads/master/com/Fremox_photoProfileNB.webp",
+    "avatar": "https://github.com/fremox59/FX_TextFrame/raw/refs/heads/master/com/logoFremox_1000x1000.webp",
+    "links":[
+      {"title": "Website : fremox.com", "url": "http://www.fremox.com/"},
+      {"title": "Linkedin", "url": "https://www.linkedin.com/in/fremox-matthieu-fremeaux-a71956314/"},
+      {"title": "Instagram", "url": "https://www.instagram.com/fremox59/"},
+      {"title": "Behance", "url": "https://www.behance.net/fremox"},
+      {"title": "Dribbble", "url": "https://dribbble.com/fremox"},
+    ]
+}
