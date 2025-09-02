@@ -58,7 +58,7 @@
     ],
     "assets": [
         {
-            "url": "",
+            "url": "https://github.com/fremox59/FX_TextFrame/releases/download/v%version%/FX_TextFrame_v%version%.zip",
             "title": "FX TextFrame",
             "name": "fx_textframe",
             "description": "Read the [installation instructions here](https://github.com/fremox59/FX_TextFrame/blob/rxlaboratorio/src/README.md).",
