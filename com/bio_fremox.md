@@ -7,4 +7,4 @@ And when I need a specific tool that I can't find on the market, to help me in m
 
 This is why I started to script in AE back in 2017. Over the years, I've created a few very nice tools like SpringyFX, IsomaticFX and MoglyphFX, that you can purchase on [my aescripts store](https://aescripts.com/authors/f-l/fremox/).
 
-FX TextFrame is my first tool ever published as an open source one, and I\'92m glad to be part of this promising platform : I will do my best to publish some other ones in the future :)
+FX TextFrame is my first tool ever published as an open source one, and I'm glad to be part of this promising platform : I will do my best to publish some other ones in the future :)
