@@ -13,7 +13,7 @@ By selecting the Single Line tab, you'll create only one single text layer once 
 Depending of the first Toggle Icon Option called ***Toggle Mask/Shape mode*** (1), you'll end up with just this single text layer with a mask onto it (if the yellow ***Mask mode*** icon with a M is the one selected), or with a text layer PLUS a shape layer parented to it if the blue ***Shape mode*** icon with a star is the selected one).
 Note that the preset applied for the Frame is automatically animated and starts opening itself (also revealing the text inside) at the current frame ; so this is normal if you can't immediatly see anything ; just preview the animation from there to see the magic happen :) 
 
-![singleLineModeUI](https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_UIinfo_singleLine-cropped.jpg)
+![](https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_UIinfo_singleLine-cropped.jpg?raw=true)
 
 Once you have chosen the mode you want for your TextFrame setup, you can either choose to customize the other options numbered 2 to 6 in the following list, right now, or you can decide to use them afterwhile once you'll have created your TextFrame setup, it's up to you!
 
@@ -32,12 +32,12 @@ Please note that - instead of creating a new perfectly centered editable text la
 
 ## Multiple Line mode
 
-<img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Multi.gif">
+![](https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Multi.gif?raw=true)
 
 The 6 buttons/dropdown lists' icons explained in the previous section remain and behave identically in this Multi Line mode.
 But with Multi Line selected, all the lines created after having set up the Multi Line FX TextFrame rig (with the corresponding button (1)), will be parented to a new ***CTRL FX TextFrame*** Null layer, with a dedicated effect called ***FX Multiline TextFrame*** applied to it, where you can adjust various paragraph aspects : Lines Alignement, Lines Spacing... and the Lines Animation : Time Offset, Direction...
 
-![multiLineModeUI](https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_UIinfo_multiLine-cropped.jpg)
+![](https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_UIinfo_multiLine-cropped.jpg?raw=true)
 
 1. ***Setup multiline FX TextFrame*** button, once clicked, will prompt you to type the text you want for each line, in a pop-up window that allows you to create (or remove) as much lines as needed. Once validated, you'll end up with the corresponding text layers, all parented to one CTRL Null layer, with useful options to adapt the lines alignement, spacing, sequence animation...
 2. You can add a new line...
@@ -51,4 +51,4 @@ FX TextFrame relies on path expressions, which could slow down your machine, esp
 
 And the very nice thing with this ***Bake path on selected FX TextFrame*** feature is that it remains non-destructive ! Indeed, if you select the same FX TextFrame layer again (that has been baked) and if you re-click on the same button, the keyframes will be removed and you'll retrieve the full expression that makes the path auto-resizing itself, with all the corners options, transform properties and animations still driven by the FX TextFrame effect ! Perfect if you need to change a text that already has an FX TextFrame that had been baked with the tool :)
 
-<img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Wording.gif"><img src="https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Saber.gif"> 
+![](https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Wording.gif?raw=true) ![](https://github.com/fremox59/FX_TextFrame/blob/master/infog/img/FX_TextFrame_Saber.gif?raw=true)
