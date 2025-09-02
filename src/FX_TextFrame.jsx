@@ -26,7 +26,7 @@
 
     //================
 
-    var version = '1.2';
+    var version = '1.3.0';
     var scriptName = "FX TextFrame";
 
     //================
@@ -1633,12 +1633,12 @@
             linkButtonsGroup.spacing = 12; 
             linkButtonsGroup.alignment = ["center","top"]; 
 
-        var button1 = linkButtonsGroup.add ("button", undefined, "See the multi-part video overview/tutorial here");
-        var button2 = linkButtonsGroup.add ("button", undefined, "Discover other products from Fremox on aescripts");
-        var button3 = linkButtonsGroup.add ("button", undefined, "Close");
+        var button1 = linkButtonsGroup.add("button", undefined, "Donate now!");
+        var button2 = linkButtonsGroup.add("button", undefined, "Discover other products from RxLab.");
+        var button3 = linkButtonsGroup.add("button", undefined, "Close");
 
-        var myURL1 = "https://vimeo.com/400316080" ;
-        var myURL2 = "https://aescripts.com/authors/f-l/fremox/" ;
+        var myURL1 = "http://donate.rxlab.io" ;
+        var myURL2 = "https://rxlaboratorio.org/" ;
 
         function isMac()
         {
