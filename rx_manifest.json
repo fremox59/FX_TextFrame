@@ -63,7 +63,7 @@
             "name": "fx_textframe",
             "description": "Read the [installation instructions here](https://github.com/fremox59/FX_TextFrame/blob/rxlaboratorio/src/README.md).",
             "hosts": [ { "name": "after-effects", "title": "After Effects" } ],
-            "os": [ {"name": "win", "title": "Windows"}, {"name": "mac", "title": "Mac OS"} ],
+            "os": [ {"name": "all", "title": "All"} ],
             "links": [{"title": "Installation instructions", "url": "https://github.com/fremox59/FX_TextFrame/blob/rxlaboratorio/src/README.md"}],
             "prerelease": false
         }
