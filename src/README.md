@@ -31,7 +31,7 @@ and you'll be ready to play with :)
 
 I'm pretty sure you'll love and use the product a lot, once you'll have played with its features a bit.
 
-As a quickstart, I recommend you to have a loot at the basics, documented in a neat "Informations" window
+As a quickstart, I recommend you to have a look at the basics, documented in a neat "Informations" window
 (available by clicking the little circled  (i) button in the top right corner of the UI.)
 
 If you encounter any problem or for any suggestion or feedback, please contact me at :
