@@ -984,8 +984,6 @@
 #    along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
-//@include "libs/colorPicker.js"
-
 //encapsulate the script in a function to avoid global variables
 // To avoid ANY new variable, the function is anonymous
 
@@ -994,7 +992,7 @@
 
     //================
 
-    var version = '1.3.2';
+    var version = '1.3.3';
     var scriptName = "FX TextFrame";
 
     //================
