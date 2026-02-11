@@ -12,7 +12,7 @@ you'll need After Effects CC2020 or newer versions, and to ensure that you use t
 
 To install the FX TextFrame toolset :
 
-- Copy the "FX_TextFrame_assets" folder; the "FX_TextFrame.jsx" file and the "libs" folder
+- Copy both the "FX_TextFrame_assets" folder and the "FX_TextFrame.jsx" file 
 - Go to your After Effects > ScriptUI Panels folder which is,
 
 on Windows, here :
